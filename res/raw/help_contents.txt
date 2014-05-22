@@ -1,0 +1,7 @@
+<h3>About LifeApp</h3>
+Our mission is to constantly track user's activity, data and provide useful information (location and time based) to the user.
+</a>
+<br>
+<br>
+<a href="mailto:myk269@nyu.edu">Contact support</a>
+<br>

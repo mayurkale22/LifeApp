@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+    
+            <TextView
+        	android:id="@+id/con_date_label"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="20dp"
+        	android:layout_marginLeft="20dp"
+        	android:text="@string/interview_date_label"/>
+
+    		<TextView
+        	android:id="@+id/con_date_edit"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignLeft="@+id/con_job_title_edit"
+        	android:layout_centerHorizontal="false"
+        	android:layout_marginTop="20dp"
+        	android:layout_toRightOf="@+id/con_date_label"
+        	android:background="@drawable/rounded_box"
+        	android:ems="6"
+        	android:gravity="center_horizontal"
+        	android:onClick="dateClicked" />
+    
+    		<TextView
+        	android:id="@+id/con_time_edit"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignRight="@+id/con_recr_company_edit"
+        	android:layout_centerHorizontal="false"
+        	android:layout_marginLeft="16dp"
+        	android:layout_marginTop="20dp"
+        	android:layout_toRightOf="@+id/con_date_edit"
+	        android:background="@drawable/rounded_box"
+	        android:ems="4"
+	        android:gravity="center_horizontal"
+	        android:onClick="timeClicked" />     
+        
+	    	<TextView
+	        android:id="@+id/con_type_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_below="@+id/con_date_label"
+	        android:text="@string/contact_type_label"/>
+	    
+	    	<Spinner
+	        android:id="@+id/con_type_spinner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/con_time_edit"
+	        android:layout_marginLeft="34dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_toRightOf="@+id/con_type_label"
+	        android:entries="@array/contact_type_values" />
+	    
+	        <TextView
+	        android:id="@+id/con_recr_name_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_below="@+id/con_type_label"
+	        android:text="@string/conversation_recr_name_label"/>
+	
+	    	<EditText
+	        android:id="@+id/con_recr_name_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/con_type_spinner"
+	        android:layout_alignLeft="@+id/con_job_title_edit"
+	        android:layout_alignTop="@+id/con_recr_name_label"
+	        android:layout_toRightOf="@+id/con_recr_name_label"
+	        android:background="@drawable/rounded_box"
+	        android:ems="9"
+	        android:inputType="textPersonName" />
+	    
+	       <TextView
+	        android:id="@+id/con_recr_company_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_below="@+id/con_recr_name_label"
+	        android:text="@string/conversation_recr_company_label"/>
+	
+	    	<EditText
+	        android:id="@+id/con_recr_company_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/con_recr_name_edit"
+	        android:layout_alignLeft="@+id/con_job_title_edit"
+	        android:layout_alignTop="@+id/con_recr_company_label"
+	        android:layout_toRightOf="@+id/con_recr_company_label"
+	        android:background="@drawable/rounded_box"
+	        android:ems="9"
+	        android:inputType="textPersonName" />
+	    
+	    	<TextView
+	        android:id="@+id/con_job_title_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_below="@+id/con_recr_company_label"
+	        android:text="@string/interview_job_title_label"/>
+	
+	    	<EditText
+	        android:id="@+id/con_job_title_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/con_recr_company_edit"
+	        android:layout_marginLeft="19dp"
+	        android:layout_toRightOf="@+id/con_job_title_label"
+	        android:layout_alignTop="@+id/con_job_title_label"
+	        android:background="@drawable/rounded_box"
+	        android:ems="9"
+	        android:inputType="textPersonName" />
+	
+	    	<TextView
+	        android:id="@+id/conv_job_company_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_below="@+id/con_job_title_label"
+	        android:text="@string/conversation_job_company_label"/>
+	
+	   	 	<EditText
+	        android:id="@+id/conv_job_company_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/con_job_title_label"
+	        android:layout_marginTop="20dp"
+	        android:layout_alignLeft="@+id/con_job_title_edit"
+	        android:layout_toRightOf="@+id/conv_job_company_label"
+	        android:background="@drawable/rounded_box"
+	        android:ems="9"
+	        android:inputType="textPersonName" />
+	    
+	    	<TextView
+	        android:id="@+id/con_comments_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_below="@+id/conv_job_company_label"
+	        android:text="@string/interview_comments_label"/>
+	
+	    	<EditText
+	        android:id="@+id/con_comments_edit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/con_job_title_edit"
+	        android:layout_below="@+id/conv_job_company_label"
+	        android:layout_marginTop="20dp"
+	        android:layout_toRightOf="@+id/con_comments_label"
+	        android:background="@drawable/rounded_box"
+	        android:ems="9"
+	        android:inputType="textMultiLine"
+	        android:lines="3" 
+	        android:gravity="top|left" />
+
+        
+    
+    
+    <TextView 
+        android:id="@+id/con_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact_button"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/red"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/contact_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:text="@string/conversation_button"
+        android:onClick="buttonClicked" />
+
+
+	
+</RelativeLayout>

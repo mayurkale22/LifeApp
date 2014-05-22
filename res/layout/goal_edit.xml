@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    
+
+    <TextView
+        android:id="@+id/goal_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/goal_recommended_button"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/interview_date_label" />
+
+    <TextView
+        android:id="@+id/goal_date_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal_date_label"
+        android:layout_alignBottom="@+id/goal_date_label"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_box"
+        android:ems="6"
+        android:gravity="center_horizontal"
+        android:onClick="dateClicked" />
+
+    <TextView
+        android:id="@+id/goal_time_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal_date_edit"
+        android:layout_alignBottom="@+id/goal_date_edit"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/goal_date_edit"
+        android:background="@drawable/rounded_box"
+        android:ems="4"
+        android:gravity="center_horizontal"
+        android:onClick="timeClicked" />
+
+    <EditText
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal_title"
+        android:layout_alignBottom="@+id/goal_title"
+        android:layout_alignLeft="@+id/goal_date_edit"
+        android:layout_alignRight="@+id/goal_time_edit"
+        android:ems="10"
+        android:background="@drawable/rounded_box"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/goal_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/goal_title"
+        android:layout_below="@+id/title_text"
+        android:layout_marginTop="30dp"
+        android:text="@string/goal_desc" />
+
+    <EditText
+        android:id="@+id/desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/goal_desc"
+        android:layout_alignBottom="@+id/goal_desc"
+        android:layout_alignLeft="@+id/title_text"
+        android:layout_alignRight="@+id/title_text"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rounded_box"
+	    android:lines="3" 
+	    android:gravity="top|left" />
+
+    <Button
+        android:id="@+id/goal_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:text="@string/goal_button"
+        android:onClick="buttonClicked" />
+
+    <EditText
+        android:id="@+id/goal_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/location"
+        android:layout_alignBottom="@+id/location"
+        android:layout_alignLeft="@+id/goal_date_edit"
+        android:layout_alignRight="@+id/goal_time_edit"
+        android:background="@drawable/rounded_box"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/goal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/goal_date_label"
+        android:layout_below="@+id/goal_date_label"
+        android:layout_marginTop="71dp"
+        android:text="@string/goal_title" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title_text"
+        android:layout_alignLeft="@+id/goal_date_label"
+        android:layout_marginBottom="25dp"
+        android:text="@string/goal_location" />
+
+    <TextView
+        android:id="@+id/goal_error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goal_save_button"
+        android:layout_alignLeft="@+id/goal_desc"
+        android:layout_marginBottom="14dp"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+    
+</RelativeLayout>

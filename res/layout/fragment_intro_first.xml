@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main2"
+    tools:context=".IntroductionActivity" >
+
+    <RelativeLayout
+        android:id="@+id/intro_1_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp" >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/intro_1_next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:src="@drawable/ic_right_arrow" />
+
+    <ImageView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/ic_launcher_big" />
+
+    <TextView
+        android:id="@+id/intro_1_title"
+        style="@style/IntroTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/intro_1_dscrp"
+        style="@style/IntroDscrpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/intro_1_text"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/app_desc"
+        android:textColor="@color/light_grey" />
+
+     <TextView
+         android:id="@+id/countdown"
+         style="@style/IntroDscrpText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@id/intro_1_next_btn"
+         android:layout_alignRight="@id/intro_1_title"
+         android:layout_marginBottom="20dp"
+         android:textSize="10dp"
+         android:textColor="@color/white"
+         android:animation="@anim/coutdown_anim" />
+
+     <TextView
+         android:id="@+id/TextView01"
+         style="@style/IntroDscrpText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="30dp"
+         android:layout_marginLeft="40dp"
+         android:layout_marginTop="15dp"
+         android:layout_below="@+id/intro_1_dscrp"
+         android:text="@string/app_desc1"
+         android:textColor="@color/light_grey" />
+
+</RelativeLayout>

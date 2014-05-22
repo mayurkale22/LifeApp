@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+
+    <TextView
+        android:id="@+id/search_cat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/search_cat_label"/>
+
+    <Spinner
+        android:id="@+id/search_cat_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_cat_label"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/search_cat_label"
+        android:entries="@array/search_values"
+        android:prompt="@string/search_prompt" />
+    
+     <TextView
+        android:id="@+id/search_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/search_item_label"
+        android:layout_below="@+id/search_cat_label"/>
+
+     <EditText
+         android:id="@+id/search_item_edit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/search_item_label"
+         android:layout_below="@+id/search_cat_label"
+         android:layout_alignTop="@+id/search_item_label"
+         android:layout_marginLeft="10dp"
+         android:ems="6"
+         android:inputType="text"
+         android:background="@drawable/rounded_box" />
+
+     <Button
+         android:id="@+id/search_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/search_item_label"
+         android:layout_marginTop="18dp"
+         android:layout_toRightOf="@+id/search_item_label"
+         android:text="@string/search_button"
+         android:onClick="buttonClicked" />
+
+</RelativeLayout>

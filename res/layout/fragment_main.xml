@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin" >
+
+    <!-- Desired pace/speed row -->
+    
+    
+    <!--  act recog -->
+    <!-- act recog code -->
+    
+    <!-- maps -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="378dp"
+        android:background="@drawable/fitness_back"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_steps_dist_cal"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:alpha="0.9"
+                android:background="@drawable/buttonshape"
+                android:onClick="btn_steps_dist_cal_onClick"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="2"
+                android:text="Distance"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_stepsmin_mileshr"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="15dp"
+                android:alpha="0.9"
+                android:background="@drawable/buttonshape2"
+                android:onClick="btn_stepsmin_mileshr_onClick"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="2"
+                android:text="steps/min"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_times"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="15dp"
+                android:alpha="0.9"
+                android:background="@drawable/buttonshape3"
+                android:onClick="btn_times_onClick"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="2"
+                android:text="time"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/row_spacing" >
+
+            <LinearLayout
+                android:id="@+id/box_steps"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/margin" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/box_distance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_graph_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <Button
+                android:id="@+id/btn_graph_heading"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="onclickgraph"
+                android:text="Steps"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/refresh_icon_og"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="onclickupdategraph"
+                android:textSize="5sp" />
+
+        </LinearLayout>
+        
+		<LinearLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:app="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/linear_layout_bar_graph"
+		    android:layout_width="match_parent"
+		    android:layout_height="126dp"
+		    android:layout_weight="0.65"
+		    android:clickable="true"
+		    android:onClick="onclickgraph"
+		    android:orientation="horizontal" >
+            
+		<com.echo.holographlibrary.BarGraph
+		    android:id="@+id/bargraph"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:clickable="true"
+		    android:onClick="onclickgraph"
+		    app:barAxisColor="@color/transparent_blue"
+		    app:barShowAxis="true"
+		    app:barShowText="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_layout_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+ 
+        <!-- android:name="com.google.android.gms.maps.SupportMapFragment" -->
+        
+    <fragment
+        android:name="com.google.android.gms.maps.MapFragment"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:alpha="0.8"/>
+	</LinearLayout>
+	<!-- maps -->
+	
+	    
+   
+</LinearLayout>
+
+

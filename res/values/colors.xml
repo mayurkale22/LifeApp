@@ -1,0 +1,22 @@
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="light_grey">#acacac</color>
+    <color name="medium_grey">#333333</color>
+    <color name="dark_grey">#212121</color>
+    <color name="blue">#33b4e5</color>
+    <color name="yellow">#ffbb33</color>
+    <color name="offwhite">#eeeeee</color>
+    <color name="green">#008000</color> 
+    <color name="red">#FF0000</color>
+    <color name="screen_background">#333</color>
+    <color name="display_background">#000</color>
+
+    <color name="transparent_blue">#800000FF</color>
+    <color name="green_light">#FF99CC00</color>
+    <color name="orange">#FFFFBB33</color>
+    <color name="transparent_orange">#80FFBB33</color>
+    <color name="purple">#FFAA66CC</color>
+    
+    
+</resources>

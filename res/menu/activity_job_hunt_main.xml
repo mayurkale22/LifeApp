@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_menu"
+        android:title="@string/menu_menu"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_calendar"
+        android:title="@string/menu_calendar"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_goal_set"
+        android:title="@string/menu_goal"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_search"
+        android:title="@string/menu_search"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_conversation"
+        android:title="@string/menu_contact"
+        android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_interview"
+        android:title="@string/menu_interview"
+        android:showAsAction="ifRoom|withText" />
+</menu>

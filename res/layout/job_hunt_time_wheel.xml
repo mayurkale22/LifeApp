@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue" >
+    
+ <!--     <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/wheelDay"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/wheelHour"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <kankan.wheel.widget.WheelView
+            android:id="@+id/wheelMinute"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </LinearLayout>
+-->
+    <TextView
+        android:id="@+id/conv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/conversation_label"
+        tools:context=".JobHuntMainActivity" />
+
+</RelativeLayout>

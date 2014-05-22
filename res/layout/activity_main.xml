@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.szugyi.circlemenu"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img1"
+    tools:context=".LifeApp" >
+
+    <com.mainpanel.view.CircleLayout
+        android:id="@+id/main_circle_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/main_selected_textView"
+        android:layout_gravity="center_horizontal"
+        circle:firstChildPosition="South" 
+        circle:rotateToCenter="true" 
+        circle:isRotating="true"
+        circle:speed="75" >       
+<!--         circle:circleBackground="@drawable/green"  > -->
+
+
+        <com.mainpanel.view.CircleImageView
+            android:id="@+id/lifeapp_map"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_map"
+            circle:name="@string/map" />
+
+        <com.mainpanel.view.CircleImageView
+            android:id="@+id/lifeapp_fitness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_fitness"
+            circle:name="@string/fitness" />
+
+        <com.mainpanel.view.CircleImageView
+            android:id="@+id/lifeapp_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_social"
+            circle:name="@string/social" />
+
+        <com.mainpanel.view.CircleImageView
+            android:id="@+id/lifeapp_career"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_career"
+            circle:name="@string/carrer" />
+
+        <com.mainpanel.view.CircleImageView
+            android:id="@+id/lifeapp_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_help"
+            circle:name="@string/help" />
+
+        <com.mainpanel.view.CircleImageView
+            android:id="@+id/lifeapp_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_settings"
+            circle:name="@string/setting" />
+    </com.mainpanel.view.CircleLayout>
+
+    <TextView
+        android:id="@+id/main_selected_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

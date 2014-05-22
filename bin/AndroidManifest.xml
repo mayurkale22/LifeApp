@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.szugyi.circlemenu">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17"/>
+	 
+    <!-- app leve permissions --> 
+	<permission android:name="com.google.cloud.backend.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.cloud.backend.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>    
+    <uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="com.fitness.MAPS_RECEIVE"/>
+	<uses-feature android:glEsVersion="0x00020000" android:required="true"/> 
+    <!-- app engine -->
+        <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>    
+    <uses-permission android:name="com.google.cloud.backend.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	
+	
+    <permission android:name="com.szugyi.circlemenu.permission.C2D_MESSAGE1" android:protectionLevel="signature"/>
+
+   <uses-permission android:name="com.szugyi.circlemenu.permission.C2D_MESSAGE"/>
+   <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+	    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAkqo3OJnSG2Qk7oM9G9y6hwywNGfpuPIs"/>        
+	    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+   
+	  <!-- main panel activities -->  
+	    <activity android:label="@string/app_name" android:name="com.mainpanel.IntroFirstFragment" android:theme="@android:style/Theme.NoTitleBar"> 
+	          <intent-filter>
+	                <action android:name="android.intent.action.MAIN"/>
+	                <category android:name="android.intent.category.LAUNCHER"/>
+	         </intent-filter>
+        </activity>
+        
+        <activity android:label="@string/app_name" android:name="com.mainpanel.LifeApp"/>    
+        
+       <!-- Nearby module activities --> 
+        <activity android:name="com.mainpanel.LifeApp_Map"/>
+        <activity android:label="@string/app_name" android:name="com.mainpanel.LifeApp_Map_resto"/>    
+        <activity android:label="@string/app_name" android:name="com.mainpanel.LifeApp_Map_Event"/>       
+        <activity android:label="@string/app_name" android:name="com.mainpanel.LifeApp_Map_Places"/> 
+        <activity android:name="com.mainpanel.view.UserSettingActivity"/>
+       
+       <!-- service and receiver modules -->   
+        <service android:enabled="true" android:label="PingServiceLabel" android:name="com.mainpanel.view.PingService">
+        </service>
+        <receiver android:name="com.mainpanel.view.AlarmReceiver"/> 
+        <service android:enabled="true" android:label="PingServiceLabel" android:name="com.mainpanel.MapDataUpdateService">
+        </service>
+		<receiver android:name="com.mainpanel.MapAlarmReceiver"/>
+		
+		 <!-- Fitness module activities -->
+		  <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.mainpanel.Pedometer">
+          </activity>
+        
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/activity_settings" android:name="com.mainpanel.Settings">
+        </activity>
+        
+        <!-- Career module activities -->
+        <activity
+            android:name="com.career.MenuActivity"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.career.JobHuntContactActivity"
+            android:label="@string/menu_contact"
+            android:screenOrientation="portrait" >
+        </activity>     
+        <activity
+            android:name="com.career.JobInterviewActivity"
+            android:label="@string/menu_interview"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.career.CalendarActivity"
+            android:label="@string/menu_calendar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.career.SearchActivity"
+            android:label="@string/menu_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.career.SearchResultActivity"
+            android:label="@string/title_search_result"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.career.GoalEdit"
+            android:label="@string/title_activity_goal_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.career.GoalDisplay"
+            android:label="@string/title_activity_goal_display" >
+        </activity>
+        
+        
+        <activity android:name="com.social.customui.CustomUI"
+           		  android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name">
+	          </activity>
+        <activity android:name="MainActivity">
+   			<intent-filter>
+     			<action android:name="org.brickred.trends.MainActivity1" />
+     			<category android:name="android.intent.category.DEFAULT" />
+   			</intent-filter>
+ 		</activity>
+ 		 <activity android:name="MainActivity2">
+   			<intent-filter>
+     			<action android:name="com.hashtags.twitter.MainActivity" />
+     			<category android:name="android.intent.category.DEFAULT" />
+   			</intent-filter>
+ 		</activity>
+         
+    	<activity android:name="com.social.customui.ProfileActivity"
+           		  android:configChanges="keyboardHidden|orientation"
+                  >
+        </activity>
+        <activity android:name="com.social.customui.ContactActivity"
+           		  android:configChanges="keyboardHidden|orientation"
+                  >
+        </activity>
+        <activity android:name="com.social.customui.FeedActivity"
+           		  android:configChanges="keyboardHidden|orientation"
+                  >
+        </activity>
+        <activity android:name="com.social.customui.AlbumActivity"
+           		  android:configChanges="keyboardHidden|orientation"
+                  >
+        </activity>
+        <activity android:name="com.social.customui.CareerActivity"
+           		  android:configChanges="keyboardHidden|orientation"
+                  >
+        </activity>
+        
+        
+        
+        
+        <service android:name="com.mainpanel.StepService"/>
+        <service android:enabled="true" android:name="com.mainpanel.GPSCheckService"/>
+        <service android:enabled="true" android:name="com.mainpanel.ActivityTimeCountService"/>
+        <service android:name="com.example.android.activityrecognition.ActivityRecognitionIntentService"/>
+         <service android:name="com.google.cloud.backend.GCMIntentService"/>
+
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.google.cloud.solutions.sampleapps.mobilebackend"/>
+            </intent-filter>
+        </receiver>
+        
+</application>
+</manifest>

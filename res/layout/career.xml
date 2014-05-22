@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:background="@drawable/blue_gradient"
+    >   
+	    <TextView 
+			android:id="@+id/career"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:text="Career"
+			android:textSize="14sp"
+			android:layout_marginLeft="5dp"
+			android:textStyle="bold"
+		/>
+	</LinearLayout>
+	          
+   <TextView 
+    android:id="@+id/headline"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:textColor="#000000"
+    /> 
+    
+   <include
+    	android:id="@+id/header"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	layout="@layout/header" />
+	
+   <LinearLayout
+ 	android:id="@+id/careerLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_gradient"
+    android:layout_margin="10dp"
+    > 
+   </LinearLayout>    
+</LinearLayout>  

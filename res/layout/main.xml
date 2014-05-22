@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img2"
+    android:orientation="vertical" >
+         
+    <RelativeLayout 
+    android:orientation="horizontal"
+    android:id="@+id/topbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:background="@drawable/blue_gradient"
+    >   
+	    <TextView 
+			android:id="@+id/textview"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="#ffffff"
+			android:textSize="14sp"
+			android:layout_marginLeft="5dp"
+			android:textStyle="bold"
+		/>
+	</RelativeLayout>
+	<View
+        android:id="@+id/view01"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#313437" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topbar"
+        android:layout_margin="10dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/list_gradient"
+        android:divider="#ffffff"
+        android:dividerHeight="2px"
+        android:scrollingCache="false" >
+    </ListView>
+
+   <Button
+       android:id="@+id/angry_btn"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_alignLeft="@+id/listview"
+       android:layout_below="@+id/listview"
+       android:layout_marginLeft="20dp"
+       android:background="@drawable/button1"
+       android:onClick="trends"
+       android:shadowColor="#25A832"
+       android:shadowDx="0"
+       android:shadowDy="0"
+       android:shadowRadius="5"
+       android:text="Popular Trends"
+       android:textColor="#FFFF24"
+       android:textSize="20sp" />
+
+   <Button
+       android:id="@+id/angry_btn"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:layout_alignRight="@+id/listview"
+       android:layout_below="@+id/listview"
+       android:layout_marginRight="38dp"
+       android:background="@drawable/button2"
+       android:shadowColor="#25A832"
+       android:shadowDx="0"
+       android:shadowDy="0"
+       android:shadowRadius="5"
+       android:text="#Trends"
+       android:onClick="count"
+       android:textColor="#FFEF5C"
+       android:textSize="20sp" />
+    
+</RelativeLayout>

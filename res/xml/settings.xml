@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:custom="http://schemas.android.com/apk/res-auto" >
+   
+    <PreferenceCategory android:title="@string/pref_food_setting" >
+        <ListPreference
+            android:key="food_type"
+            android:entries="@array/synccategories"
+            android:summary="@string/pref_summary" 
+            android:entryValues="@array/synccategories"
+            android:title="@string/pref_resto" />
+   
+		<com.mainpanel.view.NumberPickerDialogPreference
+		    android:key="food_radius"
+	        android:defaultValue="500"
+	        android:dialogMessage="Please select the radius :"
+	        android:max="5000"
+	        android:title="@string/pref_resto_radius"
+	        android:summary="@string/pref_resto_radius_summary" 
+	        custom:min="100" 
+	         />              
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/pref_event_setting" >
+        <ListPreference
+            android:key="event_type"
+            android:entries="@array/syncEcategories"
+            android:summary="@string/pref_summary" 
+            android:entryValues="@array/syncEcategories"
+            android:title="@string/pref_event" />
+        <com.mainpanel.view.NumberPickerDialogPreference
+            android:key="event_radius"
+	        android:defaultValue="1"
+	        android:dialogMessage="Please select the radius :"
+	        android:max="50"
+	        android:title="@string/pref_resto_radius"
+	        android:summary="@string/pref_resto_radius_summary" 
+	        custom:min="1" 
+	         />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/notification">
+		<CheckBoxPreference android:title="@string/notification_on" 
+		    android:key="prefnotification" 
+		    android:summary="@string/pref_notification" 
+		    android:defaultValue="false"> 
+		 </CheckBoxPreference>
+		
+     </PreferenceCategory>
+    
+</PreferenceScreen>

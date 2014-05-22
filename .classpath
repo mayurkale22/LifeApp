@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path=".apt_generated">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="mobilebackend-v1-generated-source"/>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/workspace/scribe-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/workspace/LifeApp/libs/android-smart-image-view-1.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.4/lib/opt/user/datanucleus/v1/datanucleus-appengine-1.0.10.final.jar" sourcepath="D:/LifeOnCloud/appengine-java-sdk-1.9.4/src/orm/datanucleus-appengine-1.0.10.final-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.4/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.4/lib/opt/user/datanucleus/v1/datanucleus-core-1.1.5.jar" sourcepath="D:/LifeOnCloud/appengine-java-sdk-1.9.4/src/orm/datanucleus-core-1.1.5-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.4/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.4/lib/opt/user/datanucleus/v1/datanucleus-jpa-1.1.5.jar" sourcepath="D:/LifeOnCloud/appengine-java-sdk-1.9.4/src/orm/datanucleus-jpa-1.1.5-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.4/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.4/lib/opt/user/datanucleus/v1/geronimo-jpa_3.0_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.4/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.4/lib/opt/user/datanucleus/v1/geronimo-jta_1.1_spec-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.4/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.4/lib/opt/user/datanucleus/v1/jdo2-api-2.3-eb.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.4/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="endpoint-libs/libdeviceinfoendpoint-v1/deviceinfoendpoint/deviceinfoendpoint-v1-generated-source"/>
+	<classpathentry kind="src" path="endpoint-libs/libmessageEndpoint-v1/messageEndpoint/messageendpoint-v1-generated-source"/>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/appengine-local-runtime-shared.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/el-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/jsp/repackaged-appengine-ant-1.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/jsp/repackaged-appengine-ant-launcher-1.7.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/jsp/repackaged-appengine-jasper-6.0.29.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/jsp/repackaged-appengine-jasper-el-6.0.29.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/jsp/repackaged-appengine-tomcat-juli-6.0.29.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/jsp-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/shared/servlet-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/appengine-tools-api.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/appengine-api-labs/v1/appengine-api-labs.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/appengine-endpoints/v1/appengine-endpoints-deps.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/appengine-endpoints/v1/appengine-endpoints.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/asm-4.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/datanucleus-api-jdo-3.1.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/datanucleus-api-jpa-3.1.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/datanucleus-appengine-2.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/datanucleus-core-3.1.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/geronimo-jpa_2.0_spec-1.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/jdo-api-3.0.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/datanucleus/v2/jta-1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/jsr107/v1/appengine-jsr107cache-1.9.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/opt/user/jsr107/v1/jsr107cache-1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/LifeOnCloud/appengine-java-sdk-1.9.3/lib/user/appengine-api-1.0-sdk-1.9.3.jar" sourcepath="D:/LifeOnCloud/appengine-java-sdk-1.9.3/src/user/appengine-api-1.0-sdk-1.9.3-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/D:/LifeOnCloud/appengine-java-sdk-1.9.3/docs/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/MAYUR/Downloads/Compressed/danielnadeau-holographlibrary-7e16609a90fd/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="D:/google-gson-2.2.4/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="D:/google-gson-2.2.4/gson-2.2.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/google-gson-2.2.4/gson-2.2.4-sources.jar"/>
+	<classpathentry kind="lib" path="D:/soft/java/adt-bundle-windows-x86_64-20140321/sdk/extras/android/support/v4/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="D:/soft/java/adt-bundle-windows-x86_64-20140321/sdk/extras/android/support/v7/appcompat/libs/android-support-v7-appcompat.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>
